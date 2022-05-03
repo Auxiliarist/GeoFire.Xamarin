@@ -1,0 +1,16 @@
+C:\Users\Donut\source\libraries\GeoFire.Xamarin\GeoFire.Xamarin.Android\bin\Debug\GeoFire.Xamarin.Android.dll
+C:\Users\Donut\source\libraries\GeoFire.Xamarin\GeoFire.Xamarin.Android\bin\Debug\GeoFire.Xamarin.Android.pdb
+C:\Users\Donut\source\libraries\GeoFire.Xamarin\GeoFire.Xamarin.Android\bin\Debug\GeoFire.Xamarin.Android.apk
+C:\Users\Donut\source\libraries\GeoFire.Xamarin\GeoFire.Xamarin.Android\bin\Debug\GeoFire.Xamarin.Android-Signed.apk
+C:\Users\Donut\source\libraries\GeoFire.Xamarin\GeoFire.Xamarin.Android\obj\Debug\GeoFire.Xamarin.Android.csprojResolveAssemblyReference.cache
+C:\Users\Donut\source\libraries\GeoFire.Xamarin\GeoFire.Xamarin.Android\obj\Debug\XbdMerge\Xamarin.GooglePlayServices.Basement.dll.stamp
+C:\Users\Donut\source\libraries\GeoFire.Xamarin\GeoFire.Xamarin.Android\obj\Debug\XbdMerge\Xamarin.GooglePlayServices.Tasks.dll.stamp
+C:\Users\Donut\source\libraries\GeoFire.Xamarin\GeoFire.Xamarin.Android\obj\Debug\XbdMerge\Xamarin.Firebase.Common.dll.stamp
+C:\Users\Donut\source\libraries\GeoFire.Xamarin\GeoFire.Xamarin.Android\obj\Debug\XbdMerge\Xamarin.Firebase.Database.Connection.dll.stamp
+C:\Users\Donut\source\libraries\GeoFire.Xamarin\GeoFire.Xamarin.Android\obj\Debug\XbdMerge\Xamarin.Firebase.Database.dll.stamp
+C:\Users\Donut\source\libraries\GeoFire.Xamarin\GeoFire.Xamarin.Android\obj\Debug\GeoFire.Xamarin.Android.csproj.CoreCompileInputs.cache
+C:\Users\Donut\source\libraries\GeoFire.Xamarin\GeoFire.Xamarin.Android\obj\Debug\GeoFire.Xamarin.Android.dll
+C:\Users\Donut\source\libraries\GeoFire.Xamarin\GeoFire.Xamarin.Android\obj\Debug\GeoFire.Xamarin.Android.pdb
+C:\Users\Donut\source\libraries\GeoFire.Xamarin\GeoFire.Xamarin.Android\obj\Debug\android\bin\GeoFire.Xamarin.Android.apk
+C:\Users\Donut\source\libraries\GeoFire.Xamarin\GeoFire.Xamarin.Android\obj\Debug\R.cs.flag
+C:\Users\Donut\source\libraries\GeoFire.Xamarin\GeoFire.Xamarin.Android\obj\Debug\uploadflags.txt

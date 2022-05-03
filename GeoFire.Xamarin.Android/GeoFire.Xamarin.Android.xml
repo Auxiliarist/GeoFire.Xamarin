@@ -1,0 +1,349 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GeoFire.Xamarin.Android</name>
+    </assembly>
+    <members>
+        <member name="F:GeoFire.Xamarin.Android.Core.GeoHash.DEFAULT_PRECISION">
+            <summary> The default precision of a geohash </summary>
+        </member>
+        <member name="F:GeoFire.Xamarin.Android.Core.GeoHash.MAX_PRECISION">
+            <summary> The maximal precision of a geohash </summary>
+        </member>
+        <member name="F:GeoFire.Xamarin.Android.Core.GeoHash.MAX_PRECISION_BITS">
+            <summary> The maximal number of bits precision for a geohash </summary>
+        </member>
+        <member name="T:GeoFire.Xamarin.Android.EventListenerBridge">
+            <summary>
+               GeoQuery notifies listeners with this interface about dataSnapshots that entered, exited,
+               or moved within the query.
+            </summary>
+        </member>
+        <member name="T:GeoFire.Xamarin.Android.Geofire">
+            <summary> A GeoFire instance is used to store geo location data in Firebase. </summary>
+        </member>
+        <member name="T:GeoFire.Xamarin.Android.Geofire.ICompletionListener">
+            <summary>
+               A listener that can be used to be notified about a successful write or an error on writing.
+            </summary>
+        </member>
+        <member name="M:GeoFire.Xamarin.Android.Geofire.ICompletionListener.OnComplete(System.String,Firebase.Database.DatabaseError)">
+            <summary>
+               Called once a location was successfully saved on the server or an error occurred. 
+               <para>
+                  On success, the parameter error will be null; in case of an error, the error
+                  will be passed to this method.
+               </para>
+            </summary>
+            <param name="key"> The key whose location was saved </param>
+            <param name="error"> The error or null if no error occurred </param>
+        </member>
+        <member name="P:GeoFire.Xamarin.Android.Geofire.DatabaseReference">
+            <summary> The Firebase reference this GeoFire instance uses </summary>
+        </member>
+        <member name="M:GeoFire.Xamarin.Android.Geofire.#ctor(Firebase.Database.DatabaseReference)">
+            <summary> Creates a new GeoFire instance at the given Firebase reference. </summary>
+            <param name="databaseReference">
+               The Firebase reference this GeoFire instance uses
+            </param>
+        </member>
+        <member name="M:GeoFire.Xamarin.Android.Geofire.SetLocation(System.String,GeoFire.Xamarin.Android.GeoLocation)">
+            <summary> Sets the location for a given key. </summary>
+            <param name="key"> The key to save the location for </param>
+            <param name="location"> The location of this key </param>
+        </member>
+        <member name="M:GeoFire.Xamarin.Android.Geofire.SetLocation(System.String,GeoFire.Xamarin.Android.GeoLocation,GeoFire.Xamarin.Android.Geofire.ICompletionListener)">
+            <summary> Sets the location for a given key. </summary>
+            <param name="key"> The key to save the location for </param>
+            <param name="location"> The location of this key </param>
+            <param name="listener">
+               A listener that is called once the location was successfully saved on the server or an
+               error occurred
+            </param>
+        </member>
+        <member name="M:GeoFire.Xamarin.Android.Geofire.SetLocationAsync(System.String,GeoFire.Xamarin.Android.GeoLocation)">
+            <summary> Sets the location for a given key. </summary>
+            <param name="key"> The key to save the location for </param>
+            <param name="location"> The location of this key </param>
+        </member>
+        <member name="M:GeoFire.Xamarin.Android.Geofire.SetSpotAsync(System.String,System.String,System.Double,GeoFire.Xamarin.Android.GeoLocation)">
+            <summary>
+            Sets a spot location for a given key.
+            </summary>
+            <param name="key"> The key to save the location for </param>
+            <param name="address"> Address string for the location </param>
+            <param name="accuracy"> Accuracy of the location </param>
+            <param name="location"> The location of this key </param>
+            <returns></returns>
+        </member>
+        <member name="M:GeoFire.Xamarin.Android.Geofire.RemoveLocation(System.String)">
+            <summary> Removes the location for a key from this GeoFire. </summary>
+            <param name="key"> The key to remove from this GeoFire </param>
+        </member>
+        <member name="M:GeoFire.Xamarin.Android.Geofire.RemoveLocation(System.String,GeoFire.Xamarin.Android.Geofire.ICompletionListener)">
+            <summary> Removes the location for a key from this GeoFire. </summary>
+            <param name="key"> The key to remove from this GeoFire </param>
+            <param name="listener">
+               A completion listener that is called once the location is successfully removed from
+               the server or an error occurred
+            </param>
+        </member>
+        <member name="M:GeoFire.Xamarin.Android.Geofire.RemoveLocationAsync(System.String)">
+            <summary> Removes the location for a key from this GeoFire. </summary>
+            <param name="key"> The key to remove from this GeoFire </param>
+        </member>
+        <member name="M:GeoFire.Xamarin.Android.Geofire.GetLocation(System.String,GeoFire.Xamarin.Android.ILocationCallback)">
+            <summary>
+               Gets the current location for a key and calls the callback with the current value.
+            </summary>
+            <param name="key"> The key whose location to get </param>
+            <param name="callback"> The callback that is called once the location is retrieved </param>
+        </member>
+        <member name="M:GeoFire.Xamarin.Android.Geofire.QueryAtLocation(GeoFire.Xamarin.Android.GeoLocation,System.Double)">
+            <summary>
+               Returns a new Query object centered at the given location and with the given radius.
+            </summary>
+            <param name="center"> The center of the query </param>
+            <param name="radius">
+               The radius of the query, in kilometers. The maximum radius that is supported is about 8587km.
+            </param>
+            <returns></returns>
+        </member>
+        <member name="T:GeoFire.Xamarin.Android.Geofire.LocationValueEventListener">
+            <summary> A small wrapper class to forward any events to the LocationEventListener. </summary>
+        </member>
+        <member name="T:GeoFire.Xamarin.Android.GeoLocation">
+            <summary> A wrapper class for location coordinates. </summary>
+        </member>
+        <member name="P:GeoFire.Xamarin.Android.GeoLocation.Latitude">
+            <summary> The latitude of this location in the range of [-90, 90] </summary>
+        </member>
+        <member name="P:GeoFire.Xamarin.Android.GeoLocation.Longitude">
+            <summary> The longitude of this location in the range of [-180, 180] </summary>
+        </member>
+        <member name="M:GeoFire.Xamarin.Android.GeoLocation.#ctor(System.Double,System.Double)">
+            <summary> Creates a new GeoLocation with the given latitude and longitude. </summary>
+            <param name="latitude"> The latitude in the range of [-90, 90] </param>
+            <param name="longitude"> The longitude in the range of [-180, 180] </param>
+        </member>
+        <member name="M:GeoFire.Xamarin.Android.GeoLocation.CoordinatesValid(System.Double,System.Double)">
+            <summary> Checks if these coordinates are valid geo coordinates. </summary>
+            <param name="latitude"> The latitude must be in the range [-90, 90] </param>
+            <param name="longitude"> The longitude must be in the range [-180, 180] </param>
+            <returns> True if these are valid geo coordinates </returns>
+        </member>
+        <member name="T:GeoFire.Xamarin.Android.GeoQuery">
+            <summary>
+               A GeoQuery object can be used for geo queries in a given circle. The GeoQuery class is
+               thread safe.
+            </summary>
+        </member>
+        <member name="M:GeoFire.Xamarin.Android.GeoQuery.#ctor(GeoFire.Xamarin.Android.Geofire,GeoFire.Xamarin.Android.GeoLocation,System.Double)">
+            <summary>
+               Creates a new GeoQuery object centered at the given location and with the given radius.
+            </summary>
+            <param name="geoFire"> The GeoFire object this GeoQuery uses </param>
+            <param name="center"> The center of this query </param>
+            <param name="radius">
+               The radius of the query, in kilometers. The maximum radius that is supported is about 8587km.
+            </param>
+        </member>
+        <member name="M:GeoFire.Xamarin.Android.GeoQuery.AddGeoQueryEventListener(GeoFire.Xamarin.Android.IGeoQueryEventListener)">
+            <summary> Adds a new GeoQueryEventListener to this GeoQuery. </summary>
+            <param name="listener"> The listener to add </param>
+        </member>
+        <member name="M:GeoFire.Xamarin.Android.GeoQuery.AddGeoQueryDataEventListener(GeoFire.Xamarin.Android.IGeoQueryDataEventListener)">
+            <summary> Adds a new GeoQueryEventListener to this GeoQuery. </summary>
+            <param name="listener"> The listener to add </param>
+        </member>
+        <member name="M:GeoFire.Xamarin.Android.GeoQuery.RemoveGeoQueryEventListener(GeoFire.Xamarin.Android.IGeoQueryEventListener)">
+            <summary> Removes an event listener. </summary>
+            <param name="listener"> The listener to remove </param>
+        </member>
+        <member name="M:GeoFire.Xamarin.Android.GeoQuery.RemoveGeoQueryEventListener(GeoFire.Xamarin.Android.IGeoQueryDataEventListener)">
+            <summary> Removes an event listener. </summary>
+            <param name="listener"> The listener to remove </param>
+        </member>
+        <member name="M:GeoFire.Xamarin.Android.GeoQuery.RemoveAllListeners">
+            <summary> Removes all event listeners from this GeoQuery. </summary>
+        </member>
+        <member name="M:GeoFire.Xamarin.Android.GeoQuery.SetLocation(GeoFire.Xamarin.Android.GeoLocation,System.Double)">
+            <summary>
+               Sets the center and radius (in kilometers) of this query, and triggers new events if necessary.
+            </summary>
+            <param name="center"> The new center </param>
+            <param name="radius">
+               The radius of the query, in kilometers. The maximum radius that is supported is about 8587km.
+            </param>
+        </member>
+        <member name="T:GeoFire.Xamarin.Android.IGeoQueryDataEventListener">
+            <summary>
+               GeoQuery notifies listeners with this interface about dataSnapshots that entered, exited,
+               or moved within the query.
+            </summary>
+        </member>
+        <member name="M:GeoFire.Xamarin.Android.IGeoQueryDataEventListener.OnDataEntered(Firebase.Database.DataSnapshot,GeoFire.Xamarin.Android.GeoLocation)">
+            <summary>
+               Called if a dataSnapshot entered the search area of the GeoQuery. This method is
+               called for every dataSnapshot currently in the search area at the time of adding the listener.
+               <para>
+                  This method is once per datasnapshot, and is only called again if OnDataExited was
+                  called in the meantime.
+               </para>
+            </summary>
+            <param name="dataSnapshot">
+               The associated dataSnapshot that entered the search area
+            </param>
+            <param name="location">
+               The location for this dataSnapshot as a GeoLocation object
+            </param>
+        </member>
+        <member name="M:GeoFire.Xamarin.Android.IGeoQueryDataEventListener.OnDataExited(Firebase.Database.DataSnapshot)">
+            <summary>
+               Called if a datasnapshot exited the search area of the GeoQuery. This is method is
+               only called if OnDataEntered was called for the datasnapshot.
+            </summary>
+            <param name="dataSnapshot">
+               The associated dataSnapshot that exited the search area
+            </param>
+        </member>
+        <member name="M:GeoFire.Xamarin.Android.IGeoQueryDataEventListener.OnDataMoved(Firebase.Database.DataSnapshot,GeoFire.Xamarin.Android.GeoLocation)">
+            <summary>
+               Called if a dataSnapshot moved within the search area. 
+               <para> This method can be called multiple times. </para>
+            </summary>
+            <param name="dataSnapshot">
+               The associated dataSnapshot that moved within the search area
+            </param>
+            <param name="location">
+               The location for this dataSnapshot as a GeoLocation object
+            </param>
+        </member>
+        <member name="M:GeoFire.Xamarin.Android.IGeoQueryDataEventListener.OnDataChanged(Firebase.Database.DataSnapshot,GeoFire.Xamarin.Android.GeoLocation)">
+            <summary>
+               Called if a dataSnapshot changed within the search area. 
+               <para>
+                  An OnDataMoved() is always followed by OnDataChanged() but it is be possible to see
+                  OnDataChanged() without an preceding OnDataMoved().
+               </para>
+               <para>
+                  This method can be called multiple times for a single location change, due to the
+                  way the Realtime Database handles floating point numbers.
+               </para>
+               Note: this method is not related to ValueEventListener#onDataChange(DataSnapshot). 
+            </summary>
+            <param name="dataSnapshot">
+               The associated dataSnapshot that moved within the search area
+            </param>
+            <param name="location">
+               The location for this dataSnapshot as a GeoLocation object
+            </param>
+        </member>
+        <member name="M:GeoFire.Xamarin.Android.IGeoQueryDataEventListener.OnGeoQueryReady">
+            <summary>
+               Called once all initial GeoFire data has been loaded and the relevant events have been
+               fired for this query.
+               <para>
+                  Every time the query criteria is updated, this observer will be called after the
+                  updated query has fired the appropriate dataSnapshot entered or dataSnapshot exited events.
+               </para>
+            </summary>
+        </member>
+        <member name="M:GeoFire.Xamarin.Android.IGeoQueryDataEventListener.OnGeoQueryError(Firebase.Database.DatabaseError)">
+            <summary>
+               Called in case an error occurred while retrieving locations for a query, e.g.
+               violating security rules.
+            </summary>
+            <param name="error"> The error that occurred while retrieving the query </param>
+        </member>
+        <member name="T:GeoFire.Xamarin.Android.IGeoQueryEventListener">
+            <summary>
+               GeoQuery notifies listeners with this interface about keys that entered, exited, or moved
+               within the query.
+            </summary>
+        </member>
+        <member name="M:GeoFire.Xamarin.Android.IGeoQueryEventListener.OnKeyEntered(System.String,GeoFire.Xamarin.Android.GeoLocation)">
+            <summary>
+               Called if a key entered the search area of the GeoQuery. 
+               <para>
+                  This method is called for every key currently in the search area at the time of
+                  adding the listener.
+               </para>
+               <para>
+                  This method is once per key, and is only called again if OnKeyExited was called in
+                  the meantime.
+               </para>
+            </summary>
+            <param name="key"> The key that entered the search area </param>
+            <param name="location"> The location for this key as a GeoLocation object </param>
+        </member>
+        <member name="M:GeoFire.Xamarin.Android.IGeoQueryEventListener.OnKeyExited(System.String)">
+            <summary>
+               Called if a key exited the search area of the GeoQuery. 
+               <para>
+                  This is method is only called if OnKeyEntered was called for the key.
+               </para>
+            </summary>
+            <param name="key"> The key that exited the search area </param>
+        </member>
+        <member name="M:GeoFire.Xamarin.Android.IGeoQueryEventListener.OnKeyMoved(System.String,GeoFire.Xamarin.Android.GeoLocation)">
+            <summary>
+               Called if a key moved within the search area. 
+               <para> This method can be called multiple times. </para>
+            </summary>
+            <param name="key"> The key that moved within the search area </param>
+            <param name="location"> The location for this key as a GeoLocation object </param>
+        </member>
+        <member name="M:GeoFire.Xamarin.Android.IGeoQueryEventListener.OnGeoQueryReady">
+            <summary>
+               Called once all initial GeoFire data has been loaded and the relevant events have been
+               fired for this query.
+               <para>
+                  Every time the query criteria is updated, this observer will be called after the
+                  updated query has fired the appropriate key entered or key exited events.
+               </para>
+            </summary>
+        </member>
+        <member name="M:GeoFire.Xamarin.Android.IGeoQueryEventListener.OnGeoQueryError(Firebase.Database.DatabaseError)">
+            <summary>
+               Called in case an error occurred while retrieving locations for a query, e.g.
+               violating security rules.
+            </summary>
+            <param name="error"> The error that occurred while retrieving the query </param>
+        </member>
+        <member name="M:GeoFire.Xamarin.Android.ILocationCallback.OnLocationResult(System.String,GeoFire.Xamarin.Android.GeoLocation)">
+            <summary>
+               This method is called with the current location of the key. location will be null if
+               there is no location stored in GeoFire for the key.
+            </summary>
+            <param name="key"> The key whose location we are getting </param>
+            <param name="location"> The location of the key </param>
+        </member>
+        <member name="M:GeoFire.Xamarin.Android.ILocationCallback.OnCancelled(Firebase.Database.DatabaseError)">
+            <summary>
+               Called if the callback could not be added due to failure on the server or security rules.
+            </summary>
+            <param name="databaseError"> The error that occurred </param>
+        </member>
+        <member name="F:GeoFire.Xamarin.Android.Util.Base32Utils.BITS_PER_BASE32_CHAR">
+            <summary>
+            Number of bits per base 32 character
+            </summary>
+        </member>
+        <member name="F:GeoFire.Xamarin.Android.Util.Constants.METERS_PER_DEGREE_LATITUDE">
+            <summary> Length of a degree latitude at the equator </summary>
+        </member>
+        <member name="F:GeoFire.Xamarin.Android.Util.Constants.EARTH_MERIDIONAL_CIRCUMFERENCE">
+            <summary> The equatorial circumference of the earth in meters </summary>
+        </member>
+        <member name="F:GeoFire.Xamarin.Android.Util.Constants.EARTH_EQ_RADIUS">
+            <summary> The equatorial radius of the earth in meters </summary>
+        </member>
+        <member name="F:GeoFire.Xamarin.Android.Util.Constants.EARTH_POLAR_RADIUS">
+            <summary> The meridional radius of the earth in meters </summary>
+        </member>
+        <member name="F:GeoFire.Xamarin.Android.Util.Constants.EPSILON">
+            <summary> Cutoff for floating point calculations </summary>
+        </member>
+    </members>
+</doc>

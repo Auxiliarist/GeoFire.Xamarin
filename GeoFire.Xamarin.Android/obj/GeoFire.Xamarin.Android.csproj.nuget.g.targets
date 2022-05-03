@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+  </PropertyGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)xamarin.build.download\0.4.9\build\Xamarin.Build.Download.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.build.download\0.4.9\build\Xamarin.Build.Download.targets')" />
+    <Import Project="$(NuGetPackageRoot)xamarin.android.support.annotations\26.0.2\build\MonoAndroid80\Xamarin.Android.Support.Annotations.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.android.support.annotations\26.0.2\build\MonoAndroid80\Xamarin.Android.Support.Annotations.targets')" />
+    <Import Project="$(NuGetPackageRoot)xamarin.android.support.compat\26.0.2\build\MonoAndroid80\Xamarin.Android.Support.Compat.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.android.support.compat\26.0.2\build\MonoAndroid80\Xamarin.Android.Support.Compat.targets')" />
+    <Import Project="$(NuGetPackageRoot)xamarin.android.support.media.compat\26.0.2\build\MonoAndroid80\Xamarin.Android.Support.Media.Compat.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.android.support.media.compat\26.0.2\build\MonoAndroid80\Xamarin.Android.Support.Media.Compat.targets')" />
+    <Import Project="$(NuGetPackageRoot)xamarin.android.support.core.utils\26.0.2\build\MonoAndroid80\Xamarin.Android.Support.Core.Utils.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.android.support.core.utils\26.0.2\build\MonoAndroid80\Xamarin.Android.Support.Core.Utils.targets')" />
+    <Import Project="$(NuGetPackageRoot)xamarin.android.support.core.ui\26.0.2\build\MonoAndroid80\Xamarin.Android.Support.Core.UI.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.android.support.core.ui\26.0.2\build\MonoAndroid80\Xamarin.Android.Support.Core.UI.targets')" />
+    <Import Project="$(NuGetPackageRoot)xamarin.android.support.fragment\26.0.2\build\MonoAndroid80\Xamarin.Android.Support.Fragment.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.android.support.fragment\26.0.2\build\MonoAndroid80\Xamarin.Android.Support.Fragment.targets')" />
+    <Import Project="$(NuGetPackageRoot)xamarin.googleplayservices.basement\60.1142.1\build\MonoAndroid80\Xamarin.GooglePlayServices.Basement.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.googleplayservices.basement\60.1142.1\build\MonoAndroid80\Xamarin.GooglePlayServices.Basement.targets')" />
+    <Import Project="$(NuGetPackageRoot)xamarin.googleplayservices.tasks\60.1142.1\build\MonoAndroid80\Xamarin.GooglePlayServices.Tasks.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.googleplayservices.tasks\60.1142.1\build\MonoAndroid80\Xamarin.GooglePlayServices.Tasks.targets')" />
+    <Import Project="$(NuGetPackageRoot)xamarin.firebase.common\60.1142.1\build\MonoAndroid80\Xamarin.Firebase.Common.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.firebase.common\60.1142.1\build\MonoAndroid80\Xamarin.Firebase.Common.targets')" />
+    <Import Project="$(NuGetPackageRoot)xamarin.firebase.database.connection\60.1142.1\build\MonoAndroid80\Xamarin.Firebase.Database.Connection.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.firebase.database.connection\60.1142.1\build\MonoAndroid80\Xamarin.Firebase.Database.Connection.targets')" />
+    <Import Project="$(NuGetPackageRoot)xamarin.firebase.database\60.1142.1\build\MonoAndroid80\Xamarin.Firebase.Database.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.firebase.database\60.1142.1\build\MonoAndroid80\Xamarin.Firebase.Database.targets')" />
+  </ImportGroup>
+</Project>

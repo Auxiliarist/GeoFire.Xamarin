@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Paths>
+  <Jars>
+    <Jar>obj\Debug\lp\1\jl\support-annotations.jar</Jar>
+    <Jar>C:\Users\Donut\source\libraries\GeoFire.Xamarin\GeoFire.Xamarin.Android\obj\Debug\lp\1\jl\support-annotations.jar</Jar>
+    <Jar>C:\Users\Donut\source\libraries\GeoFire.Xamarin\GeoFire.Xamarin.Android\obj\Debug\lp\10\jl\classes.jar</Jar>
+    <Jar>C:\Users\Donut\source\libraries\GeoFire.Xamarin\GeoFire.Xamarin.Android\obj\Debug\lp\11\jl\classes.jar</Jar>
+    <Jar>C:\Users\Donut\source\libraries\GeoFire.Xamarin\GeoFire.Xamarin.Android\obj\Debug\lp\2\jl\bin\classes.jar</Jar>
+    <Jar>C:\Users\Donut\source\libraries\GeoFire.Xamarin\GeoFire.Xamarin.Android\obj\Debug\lp\3\jl\bin\classes.jar</Jar>
+    <Jar>C:\Users\Donut\source\libraries\GeoFire.Xamarin\GeoFire.Xamarin.Android\obj\Debug\lp\4\jl\bin\classes.jar</Jar>
+    <Jar>C:\Users\Donut\source\libraries\GeoFire.Xamarin\GeoFire.Xamarin.Android\obj\Debug\lp\5\jl\bin\classes.jar</Jar>
+    <Jar>C:\Users\Donut\source\libraries\GeoFire.Xamarin\GeoFire.Xamarin.Android\obj\Debug\lp\6\jl\bin\classes.jar</Jar>
+    <Jar>C:\Users\Donut\source\libraries\GeoFire.Xamarin\GeoFire.Xamarin.Android\obj\Debug\lp\7\jl\classes.jar</Jar>
+    <Jar>C:\Users\Donut\source\libraries\GeoFire.Xamarin\GeoFire.Xamarin.Android\obj\Debug\lp\8\jl\classes.jar</Jar>
+    <Jar>C:\Users\Donut\source\libraries\GeoFire.Xamarin\GeoFire.Xamarin.Android\obj\Debug\lp\9\jl\classes.jar</Jar>
+  </Jars>
+  <ResolvedResourceDirectories>
+    <ResolvedResourceDirectory>C:\Users\Donut\source\libraries\GeoFire.Xamarin\GeoFire.Xamarin.Android\obj\Debug\lp\2\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Donut\source\libraries\GeoFire.Xamarin\GeoFire.Xamarin.Android\obj\Debug\lp\6\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Donut\source\libraries\GeoFire.Xamarin\GeoFire.Xamarin.Android\obj\Debug\lp\10\jl\res</ResolvedResourceDirectory>
+  </ResolvedResourceDirectories>
+  <ResolvedAssetDirectories />
+  <ResolvedEnvironmentFiles />
+  <ResolvedResourceDirectoryStamps>
+    <ResolvedResourceDirectoryStamp>C:\Users\Donut\source\libraries\GeoFire.Xamarin\GeoFire.Xamarin.Android\obj\Debug\lp\2.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Donut\source\libraries\GeoFire.Xamarin\GeoFire.Xamarin.Android\obj\Debug\lp\6.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Donut\source\libraries\GeoFire.Xamarin\GeoFire.Xamarin.Android\obj\Debug\lp\10.stamp</ResolvedResourceDirectoryStamp>
+  </ResolvedResourceDirectoryStamps>
+</Paths>

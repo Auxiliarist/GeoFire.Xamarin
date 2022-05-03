@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+    <metadata>
+        <id>GeoFire.Xamarin.Android</id>
+        <version>2.3.1</version>
+        <title>GeoFire - Realtime location queries with Firebase</title>
+        <summary>Xamarin.Android bindings for the GeoFire library</summary>
+        <description>
+GeoFire is set of open-source libraries for JavaScript, Objective-C, and Java that allow you to store and query a set of keys based on their geographic location. 
+At its heart, GeoFire simply stores locations with string keys. Its main benefit, however, is the possibility of retrieving only those keys within a given geographic area - all in realtime.
+
+GeoFire uses the Firebase database for data storage, allowing query results to be updated in realtime as they change. 
+GeoFire selectively loads only the data near certain locations, keeping your applications light and responsive, even with extremely large datasets.
+        </description>
+        <authors>SimpleBytes</authors>
+        <owners>GeoFire</owners>
+        <licenseUrl>https://github.com/firebase/geofire/blob/master/LICENSE</licenseUrl>
+        <projectUrl>https://github.com/firebase/geofire</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<copyright>Copyright © 2018</copyright>
+        <tags>geofire firebase location realtime</tags>
+		<releaseNotes>Initial Release</releaseNotes>
+        <dependencies>
+			<group targetFramework="MonoAndroid8.1">
+				<dependency id="Xamarin.Firebase.Database" version="60.1142.1" />
+			</group>
+        </dependencies>     
+    </metadata>
+    <files>       
+		<file src="..\GeoFire.Xamarin.Android\bin\Release\GeoFire.Xamarin.Android.dll" target="lib\MonoAndroid81" />
+		<file src="..\GeoFire.Xamarin.Android\bin\Release\GeoFire.Xamarin.Android.xml" target="lib\MonoAndroid81" />
+    </files>
+</package>
